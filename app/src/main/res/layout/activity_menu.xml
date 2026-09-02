@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="القائمة الرئيسية"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnUserMgmt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="إدارة المستخدمين (User Mgmt)"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnComm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="الاتصال (Comm.)"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnSystem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="النظام (System)"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnUsbManager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="إدارة USB (USB Manager)"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnAttendanceSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="البحث في السجلات (Attendance Search)"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnSystemInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="معلومات النظام (System Info)" />
+
+</LinearLayout>

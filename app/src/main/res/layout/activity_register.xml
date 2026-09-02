@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="قرّب وجهك من الكاميرا..."
+            android:textAlignment="center"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="اسم الموظف"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvBootstrapNotice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚠️ هذا أول تسجيل للجهاز - سيُسجَّل هذا الشخص كمسؤول رئيسي تلقائيًا"
+            android:textAlignment="center"
+            android:textColor="#B26A00"
+            android:visibility="gone"
+            android:layout_marginBottom="12dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupRole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <RadioButton
+                android:id="@+id/radioUser"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="موظف عادي"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioAdmin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="مسؤول" />
+
+            <RadioButton
+                android:id="@+id/radioSuperAdmin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="مسؤول رئيسي" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnCapture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="حفظ الموظف"
+            android:enabled="false" />
+
+    </LinearLayout>
+
+</LinearLayout>

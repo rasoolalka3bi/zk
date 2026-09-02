@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="إدارة USB"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="اختر البيانات المطلوب تصديرها، ثم صدّرها إلى ملف أو استرجع نسخة سابقة."
+        android:textSize="13sp"
+        android:layout_marginBottom="12dp" />
+
+    <CheckBox
+        android:id="@+id/cbExportEmployees"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="بيانات الموظفين"
+        android:checked="true" />
+
+    <CheckBox
+        android:id="@+id/cbExportAttendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="بيانات الحضور"
+        android:checked="true"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnExport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="تصدير نسخة احتياطية"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnImport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="استرجاع نسخة احتياطية" />
+
+</LinearLayout>
